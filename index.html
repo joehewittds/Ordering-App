@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&amp;family=Smooch&amp;display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <div class="backgroundImg"></div> -->
+            <h1>PaPa Joe's</h1>
+        
+        </div>
+       
+        
+
+        <main id="menuList">
+            
+        </main>
+
+        <div id="checkout">
+            <h2>Your Order</h2>
+        </div>
+        <div>
+            <p id="totalPrice">Total price:</p>
+            <button type="button" id="generate">pay</button>
+        </div>
+
+    </div>
+    <div class="modal" id="modal">
+        <div class="close-modal-btn-container">
+            <button class="modal-close-btn" id="modal-close-btn">X</button>
+        </div>
+        <div class="modal-inner" id="modal-inner">
+            <h2>Enter Card details</h2>
+            <div class="userInput">
+                <label for="passwordLength"></label>
+                <input type="text" id="1" name="name" placeholder="Enter your name">
+                <input type="text" id="2" name="number" placeholder="Enter card number">
+                <input type="text" id="3" name="cvv" placeholder="Enter CVV">
+                <button type="button" id="pay">Sumbit</button>
+
+            </div>			
+        </div>
+    </div>
+
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

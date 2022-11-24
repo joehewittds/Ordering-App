@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.container{
+    width: 600px;
+    height: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Layout */
+/* Header */
+.header{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.986);
+    width: 600px;
+    height: 60px;
+    padding-top: 20px;
+    z-index: -1;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.3)
+      ), url(./img/header.jpg) center center / cover;
+    /* opacity: 0.7; */
+}
+
+h1{ 
+    
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    /* margin-left: 50px; */
+    text-shadow: 0px 0px 5px black;
+    z-index: 1;
+}
+
+/* Menu */
+#menuList{
+    padding-top: 15px;
+    /* display: flex; 
+    flex-direction: column;  */
+    overflow-x: hidden;
+	overflow-y: scroll; /* relevant part */
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.emoji{
+    display: inline-block;
+    font-size: 36px;
+    
+}
+
+#emoji1{
+    width: 100px;
+    
+}
+
+main div{
+    margin: 0 auto;
+    width: 508px;
+
+}
+
+/* Checkout */
+
+.numberOfItems button{
+    margin-right: 10px;
+}
+
+.numberOfItems p{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* modal */
+  
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 420px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+.modal-inner{
+    width: 290px;
+    margin: 0 auto;
+}
+
+.modal-inner-loading{
+    text-align: center;
+}
+
+/* modal buttons */
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 9px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-close-btn:disabled{
+    color: whitesmoke;
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.modal-choice-btns{
+    margin-top: 10px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn{
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+/* modal input */
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* modal after submit */
+
+.loading{
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.modal-display-name{
+    color: fuchsia;
+}
+
+.modal-text{
+    height: 140px;
+    line-height: 23px;
+    margin-bottom: 0;
+}
